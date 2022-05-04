@@ -27,7 +27,7 @@ message("--")
 #-------------------------------------------------------------------------------
 
 project(
-    "atmcirclib"
+    "[[project_short_name]]"
     LANGUAGES C Fortran
 )
 
@@ -163,9 +163,9 @@ macro(f2py rpath_mod_f)
     )
 endmacro()
 
-# Call f2py("path/to/foo.f90") for all *.f/*.f90 files
-# f2py("src/atmcirclib/deriv/ext/_f77/deriv.f")
-# f2py("src/atmcirclib/deriv/ext/_f90/deriv.f90")
+# Call f2py() for all Fortran source files
+# f2py("src/[[project_short_name]]/foo.f")
+# f2py("src/[[project_short_name]]/bar.f90")
 
 #-------------------------------------------------------------------------------
 # Done
